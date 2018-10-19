@@ -10,50 +10,13 @@ header
     height: 100vh;
     background-size: cover;
     background-position: center;
+    z-index: -10;
 }
 
 .jumbotron{
     background: none;
-    color: whitesmoke;
-    text-align: right;
-}
-/* .main_navigation
-{
-    float: right;
-    list-style: none;
-    margin-top: 30px;
-}
-
-.main_navigation li
-{
-    display: inline-block;
-}
-
-.main_navigation li a
-{
     color: white;
-    text-decoration: none;
-    padding: 5px 20px;
-    font-family: "Roboto", sans-serif;
-    font-size: 15px;
+    text-align: left;
+    z-index: -9;
+    background: rgba(20, 20, 20, .5);
 }
-
-.main_navigation li a:hover
-{
-    border: 1px solid white;
-}
-
-.logo
-{
-    float: left;
-    color: white;
-    font-family: "Roboto", sans-serif;
-    padding: 5px 20px;
-    margin-top: 10px;
-}
-
-.row
-{
-    max-width: 1200px;
-    margin: auto;
-} */
