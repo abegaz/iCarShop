@@ -21,14 +21,14 @@
 
     <label for="condition">Condition</label>
     <select id="condition" name="condition">
-      <option value="new">New</option>
-      <option value="used">Used</option>
+      <option value="New">New</option>
+      <option value="Used">Used</option>
     </select>
 
     <label for="price">Price</label>
     <input type="text" id="price" name="price" placeholder="Enter Price...">
 
-    <label for="year">Mileage</label>
+    <label for="mileage">Mileage</label>
     <input type="text" id="mileage" name="mileage" placeholder="Enter Mileage...">
 
     <label for="interior_color">Interior Color</label>
