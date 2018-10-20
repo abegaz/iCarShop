@@ -1,0 +1,29 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+header
+{
+    background-image: url(jesse-collins-629527-unsplash.jpg);
+    height: 200vh;
+    background-size: cover;
+    background-position: center;
+}
+iframe {
+    border: none;
+    height: 1000px;
+    width: 500px;
+    padding: 32px;
+    background-color: silver;
+}
+
+body {
+    background-color: rgb(85, 85, 85);
+}
+
+h2 {
+    padding: 32px;
+    color: white;
+}
