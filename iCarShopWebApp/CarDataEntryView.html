@@ -10,6 +10,55 @@
 
 <head>
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+div iframe{
+display:block;
+align="center";
+}
+
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="HeroPage.html">Home</a>
+  <a href="inventory.php">INVENTORY</a>
+  
+</div>
+
+
+
+</body>
 	<title>Post a Car For Sale | iCarShop</title>
     <link rel="stylesheet" type="text/css" href="CarDataEntryViewStyles.css">
 
@@ -22,9 +71,9 @@
             <h2>Enter Vehicle Information:</h2>
         </div>
 
-        <div>
+        <div align="center">
             <!-- This src link can change to a "./test.php" or whatever, as necessary-->
-            <iframe src="addCars.php"></iframe>
+            <iframe src="addCars.php" ></iframe>
         </div>
     </div>
 
