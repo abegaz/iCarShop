@@ -86,7 +86,7 @@ INSERT INTO `clients` (`Client_id`, `Date_added`, `Last_login`, `First_name`, `M
 --
 
 CREATE TABLE `vehicles` (
-  `vin` varchar(50) NOT NULL,
+  `vin` varchar(17) NOT NULL,
   `make` varchar(50) DEFAULT NULL,
   `model` varchar(50) DEFAULT NULL,
   `year` varchar(50) DEFAULT NULL,
