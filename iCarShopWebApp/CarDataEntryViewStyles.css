@@ -1,13 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url(alessio-lin-208193-unsplash.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    z-index: -10;
+}
 iframe {
     border: none;
     height: 1000px;
     width: 500px;
     padding: 32px;
     background-color: silver;
-}
-
-body {
-    background-color: rgb(85, 85, 85);
+    z-index: -9;
 }
 
 h2 {
