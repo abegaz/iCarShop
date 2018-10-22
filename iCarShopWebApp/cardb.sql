@@ -2,10 +2,10 @@
 -- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: Oct 17, 2018 at 10:37 PM
--- Server version: 10.1.35-MariaDB
--- PHP Version: 7.2.9
+-- Host: 127.0.0.1
+-- Generation Time: Oct 22, 2018 at 10:24 PM
+-- Server version: 10.1.36-MariaDB
+-- PHP Version: 7.2.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -21,8 +21,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `cardb`
 --
-CREATE DATABASE IF NOT EXISTS `cardb` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `cardb`;
 
 -- --------------------------------------------------------
 
@@ -91,7 +89,7 @@ CREATE TABLE `vehicles` (
   `vin` varchar(50) NOT NULL,
   `make` varchar(50) DEFAULT NULL,
   `model` varchar(50) DEFAULT NULL,
-  `year` year(4) DEFAULT NULL,
+  `year` varchar(50) DEFAULT NULL,
   `body` varchar(50) DEFAULT NULL,
   `price` int(50) DEFAULT NULL,
   `mileage` int(50) DEFAULT NULL,
@@ -105,11 +103,11 @@ CREATE TABLE `vehicles` (
 --
 
 INSERT INTO `vehicles` (`vin`, `make`, `model`, `year`, `body`, `price`, `mileage`, `interior_color`, `exterior_color`, `used`) VALUES
-('1GT221E82BZ257165', 'Ford', 'Ranger', 1990, 'Two Door Pickup', 30000, 10000, 'Black', 'Red', 'Used Vehicle'),
-('3D7MA46C14G198277', 'Chevrolet', 'Silverado', 2018, 'Four Door Pickup', 55000, 0, 'Brown', 'Blue', 'New Vehicle'),
-('JKBVNMH158A015052', 'Hyundai', 'Tuscon', 2019, 'Four Door SUV', 35000, 0, 'Grey', 'Orange', 'New Vehicle'),
-('JTEHH20V316013659', 'Toyota', 'Camry', 1992, 'Four Door Sedan', 12000, 15000, 'Grey', 'Green', 'Used Vehicle'),
-('WVWRU63BX5E018494', 'Lexus', 'GS', 2019, 'Four Door SUV', 45000, 0, 'Grey', 'Yellow', 'New Vehicle');
+('1GT221E82BZ257165', 'Ford', 'Ranger', '1990', 'Two Door Pickup', 30000, 10000, 'Black', 'Red', 'Used Vehicle'),
+('3D7MA46C14G198277', 'Chevrolet', 'Silverado', '2018', 'Four Door Pickup', 55000, 0, 'Brown', 'Blue', 'New Vehicle'),
+('JKBVNMH158A015052', 'Hyundai', 'Tuscon', '2019', 'Four Door SUV', 35000, 0, 'Grey', 'Orange', 'New Vehicle'),
+('JTEHH20V316013659', 'Toyota', 'Camry', '1992', 'Four Door Sedan', 12000, 15000, 'Grey', 'Green', 'Used Vehicle'),
+('WVWRU63BX5E018494', 'Lexus', 'GS', '2019', 'Four Door SUV', 45000, 0, 'Grey', 'Yellow', 'New Vehicle');
 
 --
 -- Indexes for dumped tables
