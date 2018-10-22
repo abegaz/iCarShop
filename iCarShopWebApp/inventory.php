@@ -55,7 +55,7 @@ body {
 <body>
 
 <div class="topnav">
-  <a class="HeroPage.html" href="#home">Home</a>
+  <a class="HeroPage.html" href="HeroPage.html">Home</a>
   <a href="CarDataEntryView.html">ADMIN</a>
   
 </div>
