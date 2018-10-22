@@ -1,6 +1,7 @@
 
 <html>
 
+
   <link rel="stylesheet" href="style.css">
   <form method="POST">
 
@@ -68,8 +69,10 @@ if (isset($_POST['submit'])){
     }
     else
     {
-      echo "Data Not Uploaded";
+      echo '<p style = "color: red; text-align: center"> Invalid submission</p>';
     }
     mysqli_close($connect);
  }
+ 
+ 
 ?>
