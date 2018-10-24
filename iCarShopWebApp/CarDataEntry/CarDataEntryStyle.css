@@ -3,7 +3,7 @@
     padding: 0;
 }
 body {
-    background-image: url(alessio-lin-208193-unsplash.jpg);
+    background-image: url(./../images/alessio-lin-208193-unsplash.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center;
