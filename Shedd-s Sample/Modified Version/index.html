@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <h1>Vehicle Database</h1>
+
+        <div class="content">
+
+            <form id="add-cafe-form">
+                    <input type:"text" name="vin" placeholder="Enter VIN">
+                    <input type:"text" name="make" placeholder="Enter Manufacturer">
+                    <input type:"text" name="model" placeholder="Enter Model">
+                    <input type:"text" name="year" placeholder="Enter Year">
+                    <input type:"text" name="body" placeholder="Enter Body Type">
+                    <input type:"text" name="price" placeholder="Enter Price">
+                    <input type:"text" name="mileage" placeholder="Enter Mileage">
+                    <input type:"text" name="interior_color" placeholder="Enter Interior Color">
+                    <input type:"text" name="exterior_color" placeholder="Enter Exterior Color">
+                    <input type:"text" name="used" placeholder="Enter Vehicle Condition">
+                    <button>Add Vehicle</button>
+                
+            </form>
+
+            <ul id="cafe-list"></ul>
+
+        </div>
+
+        
+        <script>
+            // Initialize Firebase
+            var config = {
+            apiKey: "AIzaSyDJaYEj-kXr2n16ri6w1OahGdEig9CSF4U",
+            authDomain: "carprojectv1.firebaseapp.com",
+            databaseURL: "https://carprojectv1.firebaseio.com",
+            projectId: "carprojectv1",
+            storageBucket: "carprojectv1.appspot.com",
+            messagingSenderId: "420071657778"
+                        }
+            firebase.initializeApp(config);
+            const db = firebase.firestore();
+            db.settings({ timestampsInSnapshots: true })
+        </script>
+        <script src="app.js"></script>
+    </body>
+</html>
