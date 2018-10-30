@@ -30,18 +30,26 @@ cross.addEventListener('click', (e) =>{
 })
 }
 
-// getting data
+
 //where method is used for searching 
 // db.collection('cafes').where().get().then((
 // ex: where('city', '==' , 'manchester'), is case sensitive
-db.collection('cafes').get().then((snapshot)=> {
-    snapshot.docs.forEach(doc => {
-        renderCafe(doc);
 
-    })
+// orderBy('name').
+// used to order alphabetically, is also case sensitive, capital letters will precide lower case
+// can be combined with where method
+// needs an index to be added to firebase database, can be automatically done through console in browser
 
 
-})
+// OLD GET DATA METHOD (not realtime)
+// db.collection('cafes').get().then((snapshot)=> {
+//    snapshot.docs.forEach(doc => {
+//        renderCafe(doc);
+//
+//   })
+
+
+//})
 
 // saving data
 form.addEventListener('submit',(e) =>{
@@ -57,3 +65,28 @@ form.addEventListener('submit',(e) =>{
     form.city.value = '';
 
 } )
+
+// new get method, realtime listener
+db.collection('cafes').onSnapshot(snapshot => {
+    // detects changes in the database
+    let changes = snapshot.docChanges();
+    // outputs changes to console for tracking
+    console.log(changes);
+    //cycles through changes and either passes them to db or to doc
+    changes.forEach(change =>{
+        //console log 
+        console.log(change.doc.data());
+        // reloads for additions
+        if(change.type == 'added'){
+            renderCafe(change.doc);
+        // updates DB and removes id
+        } else if (change.type == 'removed'){
+            let li = cafeList.querySelector('[data-id=' + change.doc.id + ']');
+            cafeList.removeChild(li);
+        }
+
+    })
+
+})
+// example of updating a document field
+//  db.collection('cafes').doc('INSERT ID OF OBJECT TO BE UPDATED').update({city: 'New York'}) 
