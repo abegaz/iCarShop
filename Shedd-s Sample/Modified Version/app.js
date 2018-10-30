@@ -4,7 +4,6 @@ const form = document.querySelector('#add-cafe-form');
 
 function renderCafe(doc){
     let li = document.createElement('li');
-    let vin = document.createElement('span');
     let make = document.createElement('span');
     let model = document.createElement('span');
     let year = document.createElement('span');
@@ -14,31 +13,40 @@ function renderCafe(doc){
     let interior_color = document.createElement('span');
     let exterior_color = document.createElement('span');
     let used = document.createElement('span');
+    let vin = document.createElement('span');
+    let pic = document.createElement('span');
     let cross = document.createElement('div');
+    let stats = document.createElement('div')
 
     li.setAttribute('data-id', doc.id);
-    vin.textContent = doc.data().vin;
-    make.textContent = doc.data().make;
-    model.textContent = doc.data().model;
-    year.textContent = doc.data().year;
-    body.textContent = doc.data().body;
-    price.textContent = doc.data().price;
-    mileage.textContent = doc.data().mileage;
-    interior_color.textContent = doc.data().interior_color;
-    exterior_color.textContent = doc.data().exterior_color;
-    used.textContent = doc.data().used;
-    cross.textContent = 'X';
+    make.textContent = "Make: " + doc.data().make;
+    model.textContent = "Model: " + doc.data().model;
+    year.textContent = "Year: " + doc.data().year;
+    body.textContent = "Body type: " + doc.data().body;
+    price.textContent = "Price: " + doc.data().price;
+    mileage.textContent = "Mileage: " + doc.data().mileage;
+    interior_color.textContent = "Int. Color: " + doc.data().interior_color;
+    exterior_color.textContent = "Ext. Color: " + doc.data().exterior_color;
+    used.textContent = "New/Used: " + doc.data().used;
+    vin.textContent = "VIN: " + doc.data().vin;
+    pic.textContent = "PICTURE HERE";
+    pic.className = "photo";
+    cross.textContent = "X";
+    cross.className = "cross";
+    stats.className = "stats_section";
 
-    li.appendChild(vin);
-    li.appendChild(make);
-    li.appendChild(model);
-    li.appendChild(year);
-    li.appendChild(body);
-    li.appendChild(price);
-    li.appendChild(mileage);
-    li.appendChild(interior_color);
-    li.appendChild(exterior_color);
-    li.appendChild(used);
+    li.appendChild(pic);
+    stats.appendChild(make);
+    stats.appendChild(model);
+    stats.appendChild(year);
+    stats.appendChild(body);
+    stats.appendChild(price);
+    stats.appendChild(mileage);
+    stats.appendChild(interior_color);
+    stats.appendChild(exterior_color);
+    stats.appendChild(used);
+    stats.appendChild(vin);
+    li.appendChild(stats);
     li.appendChild(cross);
 
     cafeList.appendChild(li);

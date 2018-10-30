@@ -17,6 +17,7 @@ h1{
     margin: 30px auto;
     padding:  20px 30px;
     border-radius: 10px 120px 10px 10px;
+    scroll-behavior: auto;
     box-shadow: 1px 3px 5px rgba(0,0,0,0.1)
 }
 
@@ -26,35 +27,58 @@ ul{
 }
 
 li{
+    font-family: Calibri;
     padding: 20px;
     background: #f6f6f6;
-    font-size: 20px;
     color: #555;
     position: relative;
-    border-bottom: 1px solid #e6e6e6;
-    height: 46px;
+    border: 1px solid #e6e6e6;
+    height: 150px;
 }
 
-li:nth-child(even){
+/* li:nth-child(even){
     padding: 20px;
     background: #f2f2f2;
-}
+} */
 
 li span{
     display: block;
+    padding: 5px;
+    float: left;
+    width: 15%;
+    position: relative;
+    padding: 10px;
+    margin: 2px;
+    border: 2px;
+    font-size: 18px;
 }
 
-li span:nth-child(2){
-    font-size: 16px;
-    margin-top: 6px;
-    color: #999;
+li span.photo{
+    text-align: center;
+    font-size: 23px;
+    height: 100px;
+    width: 80px;
+    margin: 5px;
+    border-style: solid;
+    border-color: black;
 }
 
-li div{
+li div.stats_section{
+    display: inline;
+    padding: 5px;
+    position: relative;
+    padding: 10px;
+    margin: 2px;
+    border: 2px;
+    font-size: 18px;
+}
+
+li div.cross{
+    font-family: monospace;
     position: absolute;
     top: 0;
     right: 0px;
-    background: rgba(255,255,255,0.6);
+    background: inherit;
     width: 40px;
     text-align: center;
     padding: 10px 0;
