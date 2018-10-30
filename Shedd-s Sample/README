@@ -1,6 +1,8 @@
 The clean version is a 'learner' tutorial for the basics of firebase.
 current capabilities: read, write, delete.
 I will update with more over the next couple days with a realtime update , and some rudimentary search and sort
+*updated as of 10/30/18
+
 
 The 'modified' version is one expanded and adapted for the vehicle database
 currently only has vehicle table but should be easy to add others
