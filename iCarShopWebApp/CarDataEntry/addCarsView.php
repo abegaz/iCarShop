@@ -1,9 +1,13 @@
 
 <html>
-
+    <head>
+        <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
 
   <link rel="stylesheet" href="addCarsStyle.css">
-  <form method="POST">
+  <form id="add-car-form">
 
     <label for="vin">Vin Number</label>
     <input type="text" id="vin" name="vin" placeholder="Enter Vin...">
@@ -38,13 +42,29 @@
     <label for="exterior_color">Exterior Color</label>
     <input type="text" id="exterior_color" name="exterior_color" placeholder="Enter Exterior Color...">
 
-    <input type="submit" value="Submit" name="submit">
+    <button type="submit" value="Submit" name="submit">Submit</button>
 
 </form>
+
+        <script>
+            // Initialize Firebase
+            var config = {
+            apiKey: "AIzaSyDJaYEj-kXr2n16ri6w1OahGdEig9CSF4U",
+            authDomain: "carprojectv1.firebaseapp.com",
+            databaseURL: "https://carprojectv1.firebaseio.com",
+            projectId: "carprojectv1",
+            storageBucket: "carprojectv1.appspot.com",
+            messagingSenderId: "420071657778"
+                        }
+            firebase.initializeApp(config);
+            const db = firebase.firestore();
+            db.settings({ timestampsInSnapshots: true })
+        </script>
+        <script src="CarApp.js"></script>
 </html>
 
-<?php
-  
+<!-- <?php
+/*  
 if (isset($_POST['submit'])){
     $hostname ='localhost';
     $uname = 'root';
@@ -72,7 +92,8 @@ if (isset($_POST['submit'])){
       echo '<p style = "color: red; text-align: center"> Invalid submission</p>';
     }
     mysqli_close($connect);
- }
+ } 
+
+ */
  
- 
-?>
+?> -->
