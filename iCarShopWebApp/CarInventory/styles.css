@@ -1,6 +1,8 @@
 body{
     background-image: url(./../images/car.jpg);
     background-attachment: fixed;   
+    background-size: cover;
+    background-position: center;
     font-family: ubuntu;
 }
 
