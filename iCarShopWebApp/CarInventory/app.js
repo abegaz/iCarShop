@@ -233,6 +233,12 @@ form.addEventListener('submit',(e) =>{
 form2.addEventListener('submit',(e) =>{
     e.preventDefault();
     document.getElementById("cafe-list").innerHTML = "";
+    if (form2.content.value == "")
+    {
+        load();
+    }
+    else
+    {
     db.collection('vehicles').where('vin','==', form2.content.value).get().then((snapshot)=> {
         snapshot.docs.forEach(doc => {
         renderCafe(doc);
@@ -303,4 +309,5 @@ form2.addEventListener('submit',(e) =>{
             })
 
             })
+    }
 })
