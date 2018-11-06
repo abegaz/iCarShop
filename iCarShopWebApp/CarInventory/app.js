@@ -233,6 +233,13 @@ form.addEventListener('submit',(e) =>{
 form2.addEventListener('submit',(e) =>{
     e.preventDefault();
     document.getElementById("cafe-list").innerHTML = "";
+    db.collection('vehicles').where('vin','==', form2.content.value).get().then((snapshot)=> {
+        snapshot.docs.forEach(doc => {
+        renderCafe(doc);
+
+            })
+
+            })
     db.collection('vehicles').where('make','==', form2.content.value).get().then((snapshot)=> {
         snapshot.docs.forEach(doc => {
         renderCafe(doc);
