@@ -31,6 +31,11 @@ body {
   background-color: #4CAF50;
   color: white;
 }
+input[type=text] {
+    background-color: #3CBC8D;
+    color: white;
+	border: 2px solid red;
+}
 </style>
 <div class="topnav">
   <a class="HeroPage.html" href="./../HeroPage/HeroPageView.html">Home</a>
@@ -47,6 +52,7 @@ body {
         <div class="searchBy">
             <form id="add-cafe-form">
                     <input type:"text" name="make" placeholder="Enter Manufacturer">
+					<br>
                     <input type:"text" name="model" placeholder="Enter Model">
                     <input type:"text" name="year" placeholder="Enter Year">
                     <input type:"text" name="body" placeholder="Enter Body Type">
@@ -55,8 +61,8 @@ body {
                     <input type:"text" name="interior_color" placeholder="Enter Interior Color">
                     <input type:"text" name="exterior_color" placeholder="Enter Exterior Color">
                     <input type:"text" name="used" placeholder="Enter Vehicle Condition">
-                    <button>Search</button>
-                
+                   <br><br> <button class="search" >Search</button>
+						
             </form>
         </div>
 

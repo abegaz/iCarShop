@@ -88,6 +88,7 @@ li div.cross{
     padding: 10px 0;
     font-weight:  bold;
     cursor:  pointer;
+	
 }
 
 form input{
@@ -95,12 +96,14 @@ form input{
     width: 100%;
     margin: 0;
     border: 0;
-    border-bottom: 1px solid #eee;
+    border: 1px solid gray;
     margin: 0 1%;
     padding: 10px;
     display: block;
     box-sizing: border-box;
     font-size: 18px;
+	background-color: black;
+    color: white;
 }
 
 form input:focus{
@@ -130,7 +133,8 @@ button{
 }
 
 .searchBy {
-    background: #fff;
+    background-color:black;
+	background: rgba(20, 20, 20, .5);
     max-width: 300px;
     margin: 30px auto;
     padding:  20px 30px;
@@ -140,7 +144,8 @@ button{
     float: left;
 }
 .s {
-    background: #fff;
+	background-color:black;   
+   background: rgba(20, 20, 20, .5);
     max-width: 100%;
     margin: auto;
     width: 60%;
@@ -149,4 +154,12 @@ button{
     scroll-behavior: auto;
     box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
     margin-left: 30%;
+}
+.search{
+	width:200px;
+	
+}
+input[type=text] {
+    background-color: #3CBC8D;
+    color: white;
 }
