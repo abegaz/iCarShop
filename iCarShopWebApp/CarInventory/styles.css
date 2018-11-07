@@ -124,7 +124,7 @@ form:after{
 
 button{
     border: 0;
-    background: #fff;
+    background: #333;
     border-radius: 10px;
     padding: 13px;
     width: 24%;
@@ -133,7 +133,7 @@ button{
     font-family: ubuntu;
     letter-spacing: 1px;
     color: white;
-	background-color:rgba(20, 20, 20, .5);
+	background-color:#333
 }
 
 .searchBy {
