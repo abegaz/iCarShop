@@ -1,9 +1,11 @@
+<!DOCTYPE html>
 <html>
     <head>
         <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
         <link rel="stylesheet" href="styles.css">
-    </head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+    
     
     <body>
     <style>
@@ -31,12 +33,28 @@ body {
   background-color: #4CAF50;
   color: white;
 }
+
+
 input[type=text] {
-    background-color: #3CBC8D;
-    color: white;
-	border: 2px solid red;
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #333;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
 }
 </style>
+</head>
 <div class="topnav">
   <a class="HeroPage.html" href="./../HeroPage/HeroPageView.html">Home</a>
   <a href="./../CarDataEntry/CarDataEntryView.html">ADMIN</a>
@@ -44,7 +62,7 @@ input[type=text] {
 </div>
 <div class="">
             <form class="searchbar">
-                    <input type:"text" name="content" placeholder="Search Keywords">
+                    <input type="text" name="search" placeholder="Search..">
 					<br><br><br>
                     <button id="go">Go</button>
                 
