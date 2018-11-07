@@ -15,14 +15,16 @@ h1{
 }
 
 .content{
-    background: #fff;
+
     max-width: 960px;
+	background-color:rgba(20, 20, 20, .5);
     margin: 30px auto;
     padding:  20px 30px;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px;
     scroll-behavior: auto;
     box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
     float: right;
+	
 }
 
 ul{
@@ -34,7 +36,8 @@ li{
     font-family: Calibri;
     padding: 20px;
     background: #f6f6f6;
-    color: #555;
+	background-color:rgba(20, 20, 20, .5);
+    color: white;
     position: relative;
     border: 1px solid #e6e6e6;
     height: 150px;
@@ -124,12 +127,13 @@ button{
     background: #fff;
     border-radius: 10px;
     padding: 13px;
-    width: 14%;
+    width: 24%;
     box-shadow: -1px 0px 1px rgba(0,0,0,0.1);
     font-weight: bold;
     font-family: ubuntu;
     letter-spacing: 1px;
-    color: #999;
+    color: white;
+	background-color:rgba(20, 20, 20, .5);
 }
 
 .searchBy {
@@ -138,25 +142,33 @@ button{
     max-width: 300px;
     margin: 30px auto;
     padding:  20px 30px;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px;
     scroll-behavior: auto;
     box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
     float: left;
+	
 }
-.s {
+.searchbar {
+	float:left;
 	background-color:black;   
    background: rgba(20, 20, 20, .5);
     max-width: 100%;
     margin: auto;
     width: 60%;
     padding:  20px 30px;
-    border-radius: 10px 10px 10px 10px;
+   position:relative;
+	top:20px;
+	border-radius: 10px 10px 10px 10px;
     scroll-behavior: auto;
     box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
-    margin-left: 30%;
+    margin-left: 0%;
+	
 }
-.search{
-	width:200px;
+.s{
+	float:left;
+	background-color:black;   
+   background: rgba(20, 20, 20, .5);
+    padding:  20px 30px;
 	
 }
 input[type=text] {
