@@ -15,8 +15,18 @@ function renderCafe(doc){
     let exterior_color = document.createElement('span');
     let used = document.createElement('span');
     let vin = document.createElement('span');
-    let pic = document.createElement('span');
-    let stats = document.createElement('div')
+    let stats = document.createElement('div');
+    let img = show_image(doc.data().image, 75,75,'Photo');
+
+    function show_image(image_source, width, height,alt) {
+        let image = document.createElement('img');
+        image.src = image_source;
+        image.width = width;
+        image.height = height;
+        image.alt = alt;
+        return image;
+    }
+
 
     li.setAttribute('data-id', doc.id);
     make.textContent = "Make: " + doc.data().make;
@@ -29,11 +39,9 @@ function renderCafe(doc){
     exterior_color.textContent = "Ext. Color: " + doc.data().exterior_color;
     used.textContent = "New/Used: " + doc.data().used;
     vin.textContent = "VIN: " + doc.data().vin;
-    pic.textContent = "PICTURE HERE";
-    pic.className = "photo";
     stats.className = "stats_section";
 
-    li.appendChild(pic);
+
     stats.appendChild(make);
     stats.appendChild(model);
     stats.appendChild(year);
@@ -44,6 +52,7 @@ function renderCafe(doc){
     stats.appendChild(exterior_color);
     stats.appendChild(used);
     stats.appendChild(vin);
+    li.appendChild(img);
     li.appendChild(stats);
 
     cafeList.appendChild(li);
