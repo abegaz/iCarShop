@@ -15,7 +15,8 @@ h1{
 }
 
 .content{
-    background: #fff;
+    background-color:black;
+	background: rgba(20, 20, 20, .5);
     max-width: 960px;
     margin: 30px auto;
     padding:  20px 30px;
@@ -38,6 +39,9 @@ li{
     position: relative;
     border: 1px solid #e6e6e6;
     height: 150px;
+	 background-color:black;
+	background: rgba(20, 20, 20, .5);
+	color:white;
 }
 
 /* li:nth-child(even){
@@ -121,7 +125,8 @@ form:after{
 
 button{
     border: 0;
-    background: #fff;
+     background-color:gray;
+
     border-radius: 10px;
     padding: 13px;
     width: 14%;
@@ -129,7 +134,7 @@ button{
     font-weight: bold;
     font-family: ubuntu;
     letter-spacing: 1px;
-    color: #999;
+    color:white;
 }
 
 .searchBy {
