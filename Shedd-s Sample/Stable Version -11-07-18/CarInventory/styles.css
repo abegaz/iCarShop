@@ -46,7 +46,9 @@ li span{
     padding: 10px;
     margin: 2px;
     border: 2px;
-    font-size: 18px;
+    /* border-color: black;
+    border-style: solid; */
+    font-size: 15px;
 }
 
 li span.photo{
@@ -55,18 +57,50 @@ li span.photo{
     height: 100px;
     width: 80px;
     margin: 5px;
-    border-style: solid;
-    border-color: black;
+    /* border-style: solid;
+    border-color: black; */
 }
 
 li div.stats_section{
-    display: inline;
+    /* display: inline; */
     padding: 5px;
-    position: relative;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    bottom: 10px;
+    height: auto;
+    width: 70%;
     padding: 10px;
     margin: 2px;
     border: 2px;
+    /* border-color: red;
+    border-style: solid; */
     font-size: 18px;
+}
+
+li div.img_div {
+    padding: 5px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+    height: auto;
+    width: 20%;
+    padding: 10px;
+    margin: 2px;
+    border: 2px;
+    /* border-color: red;
+    border-style: solid; */
+    font-size: 18px;
+}
+
+img {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    margin: 5px;
+    border-style: solid;
+    border-color: black;
 }
 
 li div.cross{
@@ -93,7 +127,7 @@ form input{
     padding: 10px;
     display: block;
     box-sizing: border-box;
-    font-size: 18px;
+    font-size: 15px;
 	background-color: black;
     color: white;
 }
@@ -148,6 +182,7 @@ button{
     scroll-behavior: auto;
     box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
     float: left;
+    font-size: 8px;
 }
 .s {
 	background-color:black;   
