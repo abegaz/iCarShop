@@ -37,40 +37,41 @@ input[type=text] {
 	border: 2px solid red;
 }
 </style>
-<div class="topnav">
-  <a class="HeroPage.html" href="./../HeroPage/HeroPageView.html">Home</a>
-  <a href="./../CarDataEntry/CarDataEntryView.html">ADMIN</a>
-  
-</div>
-<div class="s">
-            <form id="searchbar">
-                    <input type:"text" name="content" placeholder="Search Keywords">
-                    <button id="go">Go</button>
+    <div class="topnav">
+        <a class="HeroPage.html" href="./../HeroPage/HeroPageView.html">Home</a>
+        <a href="./../CarDataEntry/CarDataEntryView.html">ADMIN</a>
+        
+    </div>
+    <div class="s">
+        <form id="searchbar">
+            <input type:"text" name="content" placeholder="Search Keywords">
+            <button id="go">Go</button>
+            
+        </form>
+    </div>
+    <div class="searchBy">
+        <form id="add-cafe-form">
+            <input type:"text" name="make" placeholder="Enter Manufacturer">
+            <!-- <br> -->
+            <input type:"text" name="model" placeholder="Enter Model">
+            <input type:"text" name="year" placeholder="Enter Year">
+            <input type:"text" name="body" placeholder="Enter Body Type">
+            <input type:"text" name="price" placeholder="Enter Price">
+            <input type:"text" name="mileage" placeholder="Enter Mileage">
+            <input type:"text" name="interior_color" placeholder="Enter Interior Color">
+            <input type:"text" name="exterior_color" placeholder="Enter Exterior Color">
+            <input type:"text" name="used" placeholder="Enter Vehicle Condition">
+            <!-- <br><br>  -->
+            <button class="search" >Search</button>
                 
-            </form>
-          </div>
-        <div class="searchBy">
-            <form id="add-cafe-form">
-                    <input type:"text" name="make" placeholder="Enter Manufacturer">
-					<br>
-                    <input type:"text" name="model" placeholder="Enter Model">
-                    <input type:"text" name="year" placeholder="Enter Year">
-                    <input type:"text" name="body" placeholder="Enter Body Type">
-                    <input type:"text" name="price" placeholder="Enter Price">
-                    <input type:"text" name="mileage" placeholder="Enter Mileage">
-                    <input type:"text" name="interior_color" placeholder="Enter Interior Color">
-                    <input type:"text" name="exterior_color" placeholder="Enter Exterior Color">
-                    <input type:"text" name="used" placeholder="Enter Vehicle Condition">
-                   <br><br> <button class="search" >Search</button>
-						
-            </form>
-        </div>
+        </form>
+    </div>
 
-        <div class="content">
+    <div class="content">
 
-            <ul id="cafe-list"></ul>
+        <ul id="cafe-list"></ul>
 
-        </div>
+    </div>
 
         
         <script>

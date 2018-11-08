@@ -14,19 +14,6 @@ h1{
     text-align: center;
 }
 
-.content{
-    background-color:black;
-	background: rgba(20, 20, 20, .5);
-    max-width: 960px;
-    margin: 30px auto;
-    padding:  20px 30px;
-    border-radius: 10px 10px 10px 10px;
-    scroll-behavior: auto;
-    box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
-   position:relative;
-   left:200px;
-}
-
 ul{
     list-style-type: none;
     padding: 0;
@@ -39,8 +26,8 @@ li{
     color: #555;
     position: relative;
     border: 1px solid #e6e6e6;
-    height: 150px;
-	 background-color:black;
+    height: 200px;
+	background-color:black;
 	background: rgba(20, 20, 20, .5);
 	color:white;
 }
@@ -138,10 +125,23 @@ button{
     color:white;
 }
 
+.content{
+    background-color:black;
+	background: rgba(20, 20, 20, .5);
+    width: 60%;
+    margin: 30px;
+    padding:  20px 30px;
+    border-radius: 10px 10px 10px 10px;
+    scroll-behavior: auto;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+   position:relative;
+   float: right;
+}
+
 .searchBy {
     background-color:black;
 	background: rgba(20, 20, 20, .5);
-    max-width: 300px;
+    width: 20%;
     margin: 30px auto;
     padding:  20px 30px;
     border-radius: 10px 10px 10px 10px;
