@@ -16,7 +16,7 @@ function renderCafe(doc){
     let used = document.createElement('span');
     let vin = document.createElement('span');
     let stats = document.createElement('div');
-    let img = show_image(doc.data().image, 75,75,'Photo');
+    let img = show_image(doc.data().image, 50,50,'Photo');
 
     function show_image(image_source, width, height,alt) {
         let image = document.createElement('img');
