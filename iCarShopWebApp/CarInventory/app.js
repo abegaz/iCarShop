@@ -16,7 +16,8 @@ function renderCafe(doc){
     let used = document.createElement('span');
     let vin = document.createElement('span');
     let stats = document.createElement('div');
-    let img = show_image(doc.data().image, 75,75,'Photo');
+    let imgDiv = document.createElement('div');
+    let img = show_image(doc.data().image, 90,70,'Photo');
 
     function show_image(image_source, width, height,alt) {
         let image = document.createElement('img');
@@ -40,6 +41,8 @@ function renderCafe(doc){
     used.textContent = "New/Used: " + doc.data().used;
     vin.textContent = "VIN: " + doc.data().vin;
     stats.className = "stats_section";
+    imgDiv.className = "img_div";
+    img.className = "img_class";
 
 
     stats.appendChild(make);
@@ -52,8 +55,9 @@ function renderCafe(doc){
     stats.appendChild(exterior_color);
     stats.appendChild(used);
     stats.appendChild(vin);
-    li.appendChild(img);
+    imgDiv.appendChild(img)
     li.appendChild(stats);
+    li.appendChild(imgDiv);
 
     cafeList.appendChild(li);
 // deleting data

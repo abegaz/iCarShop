@@ -14,6 +14,19 @@ h1{
     text-align: center;
 }
 
+.content{
+
+    max-width: 960px;
+	background-color:rgba(20, 20, 20, .5);
+    margin: 30px auto;
+    padding:  20px 30px;
+    border-radius: 10px;
+    scroll-behavior: auto;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+    
+	
+}
+
 ul{
     list-style-type: none;
     padding: 0;
@@ -23,13 +36,11 @@ li{
     font-family: Calibri;
     padding: 20px;
     background: #f6f6f6;
-    color: #555;
+	background-color:rgba(20, 20, 20, .5);
+    color: white;
     position: relative;
     border: 1px solid #e6e6e6;
-    height: 200px;
-	background-color:black;
-	background: rgba(20, 20, 20, .5);
-	color:white;
+    height: 150px;
 }
 
 /* li:nth-child(even){
@@ -46,9 +57,7 @@ li span{
     padding: 10px;
     margin: 2px;
     border: 2px;
-    /* border-color: black;
-    border-style: solid; */
-    font-size: 15px;
+    font-size: 18px;
 }
 
 li span.photo{
@@ -57,50 +66,18 @@ li span.photo{
     height: 100px;
     width: 80px;
     margin: 5px;
-    /* border-style: solid;
-    border-color: black; */
+    border-style: solid;
+    border-color: black;
 }
 
 li div.stats_section{
-    /* display: inline; */
+    display: inline;
     padding: 5px;
-    position: absolute;
-    left: 10px;
-    top: 10px;
-    bottom: 10px;
-    height: auto;
-    width: 70%;
+    position: relative;
     padding: 10px;
     margin: 2px;
     border: 2px;
-    /* border-color: red;
-    border-style: solid; */
     font-size: 18px;
-}
-
-li div.img_div {
-    padding: 5px;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    bottom: 10px;
-    height: auto;
-    width: 20%;
-    padding: 10px;
-    margin: 2px;
-    border: 2px;
-    /* border-color: red;
-    border-style: solid; */
-    font-size: 18px;
-}
-
-img {
-    position: absolute;
-    top: 20%;
-    left: 20%;
-    margin: 5px;
-    border-style: solid;
-    border-color: black;
 }
 
 li div.cross{
@@ -127,7 +104,7 @@ form input{
     padding: 10px;
     display: block;
     box-sizing: border-box;
-    font-size: 15px;
+    font-size: 18px;
 	background-color: black;
     color: white;
 }
@@ -147,57 +124,51 @@ form:after{
 
 button{
     border: 0;
-     background-color:gray;
-
+    background: #333;
     border-radius: 10px;
     padding: 13px;
-    width: 14%;
+    width: 24%;
     box-shadow: -1px 0px 1px rgba(0,0,0,0.1);
     font-weight: bold;
     font-family: ubuntu;
     letter-spacing: 1px;
-    color:white;
-}
-
-.content{
-    background-color:black;
-	background: rgba(20, 20, 20, .5);
-    width: 60%;
-    margin: 30px;
-    padding:  20px 30px;
-    border-radius: 10px 10px 10px 10px;
-    scroll-behavior: auto;
-    box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
-   position:relative;
-   float: right;
+    color: white;
+	background-color:#333
 }
 
 .searchBy {
     background-color:black;
 	background: rgba(20, 20, 20, .5);
-    width: 20%;
+    max-width: 300px;
     margin: 30px auto;
     padding:  20px 30px;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px;
     scroll-behavior: auto;
     box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
     float: left;
-    font-size: 8px;
+	
 }
-.s {
+.searchbar {
+	float:left;
 	background-color:black;   
    background: rgba(20, 20, 20, .5);
     max-width: 100%;
     margin: auto;
     width: 60%;
     padding:  20px 30px;
-    border-radius: 10px 10px 10px 10px;
+   position:relative;
+	top:20px;
+	border-radius: 10px 10px 10px 10px;
     scroll-behavior: auto;
     box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
-    margin-left: 30%;
+    margin-left: 0%;
+	
 }
-.search{
-	width:200px;
+.s{
+	float:left;
+	background-color:black;   
+   background: rgba(20, 20, 20, .5);
+    padding:  20px 30px;
 	
 }
 input[type=text] {

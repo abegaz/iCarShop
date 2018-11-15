@@ -1,0 +1,24 @@
+https://console.firebase.google.com/project/carprojectv1/hosting/main
+Start here, follow documentation located here:
+https://firebase.google.com/docs/hosting/quickstart?authuser=0
+
+Default options should work fine in most areas in the command line with the exception of rewriting the URL for a single page app (select no)
+
+
+IMPORTANT: once you reach step 5 (deployment) it will almost certainly error and fail. thats because there is a typo in the original code pushed by google
+
+replace the predeploy section in 'firebase.json' with:
+
+"predeploy": [
+  "npm --prefix \"%RESOURCE_DIR%\" run lint"
+]
+
+
+then re-run the deployment command
+
+after completion there should be a directory 'public' , put all files here
+delete the old index.html and rename the heropage to index.html, this should force the site to display that page when navigating to the default URL
+
+also to note, everytime you deploy the site you are updating the security rules for BOTH the database and storage, which if you do not
+ replace the default rules (the ones emplaced in the directory after startup) it will effectively lock out users from reading or writing
+
