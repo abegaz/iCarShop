@@ -84,7 +84,6 @@ form.addEventListener('submit',(e) =>{
 
 
     })
-    
     // emptying fields after an entry
     form.vin.value = '';
     form.make.value = '';
@@ -98,9 +97,3 @@ form.addEventListener('submit',(e) =>{
     form.condition.value = '';
 
 } )
-.then(function() {
-        alert("Car successfully added!");
-    })
-    .catch(function(error) {
-        alert("Error writing document: " + error);
-    });
