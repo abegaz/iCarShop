@@ -27,9 +27,11 @@ function login(){
 
   var userEmail = document.getElementById("email_field").value;
   var userPass = document.getElementById("password_field").value;
+  
 
   firebase.auth().signInWithEmailAndPassword(userEmail, userPass).catch(function(error) {
-    // Handle Errors here.
+ 
+   // Handle Errors here.
     var errorCode = error.code;
     var errorMessage = error.message;
 
@@ -37,7 +39,7 @@ function login(){
 
     // ...
   });
-
+  window.location = "CarDataEntryView.html"
 }
 
 function logout(){
