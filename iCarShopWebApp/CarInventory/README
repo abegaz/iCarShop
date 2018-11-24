@@ -1,0 +1,15 @@
+The clean version is a 'learner' tutorial for the basics of firebase.
+current capabilities: read, write, delete.
+I will update with more over the next couple days with a realtime update , and some rudimentary search and sort
+*updated as of 10/30/18
+
+
+The 'modified' version is one expanded and adapted for the vehicle database
+currently only has vehicle table but should be easy to add others
+
+Prereqs:
+appropriately setup firebase console
+hosted in XAMPP just like prior iteration
+
+tip: if the page is not loading changes properly its almost certainly your browser cache catching it (this should probably be forced off in the future)
+reload the cache by SHIFT + F5 , or SHIFT + REFRESH
