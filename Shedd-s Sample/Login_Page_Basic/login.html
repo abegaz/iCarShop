@@ -3,8 +3,43 @@
   <title>Firebase Login</title>
   <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
   <link rel="stylesheet" href="login_style.css" />
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+   crossorigin="anonymous">
+<!--Custom CSS-->
+<link rel="stylesheet" type="text/css" media="screen" href="HeroPageStyle.css" />
 </head>
-<body>
+<header>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-secondary" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="#">iCarShop</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="HeroPageView.html"> HOME </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./../CarInventory/inventory.html"> INVENTORY </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#"> ABOUT </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="./../location/location.html"> FIND US </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+</header>
+    <body>
 
   <div id="login_div" class="main-div">
     <h3>Firebase Web login Example</h3>
@@ -36,6 +71,51 @@
             firebase.initializeApp(config);
   </script>
   <script src="login.js"></script>
+
+  <style>
+   
+   body{
+    background-image: url(images/car.jpg);
+    background-attachment: fixed;   
+    background-size: cover;
+    background-position: center;
+    font-family: ubuntu;
+   }
+   .topnav {
+      overflow: hidden;
+      background-color: #333;
+    }
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    .topnav a.active {
+      background-color: #4CAF50;
+      color: white;
+    
+    }
+    input[type=text] {
+    background-color: #3CBC8D;
+    color: white;
+	border: 2px solid red;
+}
+h3{
+  color: #ddd;
+}
+    </style>
+    
+
+
+
+
 
 </body>
 </html>
