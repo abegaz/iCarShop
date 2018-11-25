@@ -8,13 +8,7 @@ function renderCafe(doc){
     let make = document.createElement('span');
     let model = document.createElement('span');
     let year = document.createElement('span');
-    //let body = document.createElement('span');
     let price = document.createElement('span');
-    //let mileage = document.createElement('span');
-    //let interior_color = document.createElement('span');
-    //let exterior_color = document.createElement('span');
-    //let used = document.createElement('span');
-    //let vin = document.createElement('span');
     let button = document.createElement('button');
     let stats = document.createElement('div');
     let imgDiv = document.createElement('div');
@@ -34,15 +28,9 @@ function renderCafe(doc){
     make.textContent = "Make: " + doc.data().make;
     model.textContent = "Model: " + doc.data().model;
     year.textContent = "Year: " + doc.data().year;
-    //body.textContent = "Body type: " + doc.data().body;
     price.textContent = "Price: " + doc.data().price;
     button.textContent = "More Details";
     button.onclick = function() {window.location = "detailPage.html?vin=" + doc.data().vin;}
-    //mileage.textContent = "Mileage: " + doc.data().mileage;
-    //interior_color.textContent = "Int. Color: " + doc.data().interior_color;
-    //exterior_color.textContent = "Ext. Color: " + doc.data().exterior_color;
-    //used.textContent = "New/Used: " + doc.data().used;
-    //vin.textContent = "VIN: " + doc.data().vin;
     stats.className = "stats_section";
     imgDiv.className = "img_div";
     img.className = "img_class";
@@ -51,29 +39,15 @@ function renderCafe(doc){
     stats.appendChild(make);
     stats.appendChild(model);
     stats.appendChild(year);
-    //stats.appendChild(body);
     stats.appendChild(price);
     stats.appendChild(button);
-    //stats.appendChild(mileage);
-    //stats.appendChild(interior_color);
-    //stats.appendChild(exterior_color);
-    //stats.appendChild(used);
-    //stats.appendChild(vin);
     imgDiv.appendChild(img)
     li.appendChild(stats);
     li.appendChild(imgDiv);
 
     cafeList.appendChild(li);
 // deleting data
-/*cross.addEventListener('click', (e) =>{
-    //stops continous propagation of the event (optional but prevents errors)
-    e.stopPropagation();
-    //grabs attribute tied to UI element (which is also connected to Firebase ID)
-    let id = e.target.parentElement.getAttribute('data-id');
-    //queries firestore and deletes that id
-    db.collection('vehicles').doc(id).delete();
 
-})*/
 }
 
 // getting data
