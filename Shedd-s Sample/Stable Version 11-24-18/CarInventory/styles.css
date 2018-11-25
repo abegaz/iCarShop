@@ -1,0 +1,206 @@
+body{
+    background-image: url(./../images/car.jpg);
+    background-attachment: fixed;   
+    background-size: cover;
+    background-position: center;
+    font-family: ubuntu;
+}
+
+h1{
+    color: #fff;
+    font-size: 64px;
+    letter-spacing: 2px;
+    margin-top: 80px;
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+li{
+    font-family: Calibri;
+    padding: 20px;
+    background: #f6f6f6;
+    color: #555;
+    position: relative;
+    border: 1px solid #e6e6e6;
+    height: 200px;
+	background-color:black;
+	background: rgba(20, 20, 20, .5);
+	color:white;
+}
+
+/* li:nth-child(even){
+    padding: 20px;
+    background: #f2f2f2;
+} */
+
+li span{
+    display: block;
+    padding: 5px;
+    float: left;
+    width: 15%;
+    position: relative;
+    padding: 10px;
+    margin: 2px;
+    border: 2px;
+    /* border-color: black;
+    border-style: solid; */
+    font-size: 15px;
+}
+
+li span.photo{
+    text-align: center;
+    font-size: 23px;
+    height: 100px;
+    width: 80px;
+    margin: 5px;
+    /* border-style: solid;
+    border-color: black; */
+}
+
+li div.stats_section{
+    /* display: inline; */
+    padding: 5px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    bottom: 10px;
+    height: auto;
+    width: 70%;
+    padding: 10px;
+    margin: 2px;
+    border: 2px;
+    /* border-color: red;
+    border-style: solid; */
+    font-size: 18px;
+}
+
+li div.img_div {
+    padding: 5px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+    height: auto;
+    width: 20%;
+    padding: 10px;
+    margin: 2px;
+    border: 2px;
+    /* border-color: red;
+    border-style: solid; */
+    font-size: 18px;
+}
+
+img {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    margin: 5px;
+    border-style: solid;
+    border-color: black;
+}
+
+li div.cross{
+    font-family: monospace;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    background: inherit;
+    width: 40px;
+    text-align: center;
+    padding: 10px 0;
+    font-weight:  bold;
+    cursor:  pointer;
+	
+}
+
+form input{
+    float: left;
+    width: 100%;
+    margin: 0;
+    border: 0;
+    border: 1px solid gray;
+    margin: 0 1%;
+    padding: 10px;
+    display: block;
+    box-sizing: border-box;
+    font-size: 15px;
+	background-color: black;
+    color: white;
+}
+
+form input:focus{
+    outline: none;
+    border-bottom: 3px solid #88236f;
+    padding-bottom: 8px;
+    transition: all ease 0.2s;
+}
+
+form:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+button{
+    border: 0;
+     background-color:gray;
+
+    border-radius: 10px;
+    padding: 13px;
+    width: 14%;
+    box-shadow: -1px 0px 1px rgba(0,0,0,0.1);
+    font-weight: bold;
+    font-family: ubuntu;
+    letter-spacing: 1px;
+    color:white;
+}
+
+.content{
+    background-color:black;
+	background: rgba(20, 20, 20, .5);
+    width: 60%;
+    margin: 30px;
+    padding:  20px 30px;
+    border-radius: 10px 10px 10px 10px;
+    scroll-behavior: auto;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+   position:relative;
+   float: right;
+}
+
+.searchBy {
+    background-color:black;
+	background: rgba(20, 20, 20, .5);
+    width: 20%;
+    margin: 30px auto;
+    padding:  20px 30px;
+    border-radius: 10px 10px 10px 10px;
+    scroll-behavior: auto;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+    float: left;
+    font-size: 8px;
+}
+.s {
+	background-color:black;   
+   background: rgba(20, 20, 20, .5);
+    max-width: 100%;
+    margin: auto;
+    width: 60%;
+    padding:  20px 30px;
+    border-radius: 10px 10px 10px 10px;
+    scroll-behavior: auto;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+    margin-left: 30%;
+}
+.search{
+	width:200px;
+	
+}
+input[type=text] {
+    background-color: #3CBC8D;
+    color: white;
+}
