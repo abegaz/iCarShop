@@ -1,6 +1,14 @@
 const cafeList = document.querySelector('#cafe-list');
 const form = document.querySelector('#add-car-form');
 
+db.collection('vehicles').get().then((snapshot)=> {
+    snapshot.docs.forEach(doc => {
+        renderCafe(doc);
+
+    })
+
+
+})
 
 // saving data
 form.addEventListener('submit',(e) =>{
