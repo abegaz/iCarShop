@@ -6,7 +6,7 @@ firebase.auth().onAuthStateChanged(function(user) {
     document.getElementById("login_div").style.display = "none";
 
     var user = firebase.auth().currentUser;
-
+    window.location = "CarDataEntryView.html"
     if(user != null){
 
       var email_id = user.email;
@@ -39,7 +39,7 @@ function login(){
 
     // ...
   });
-  window.location = "CarDataEntryView.html"
+  
 }
 
 function logout(){

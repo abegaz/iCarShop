@@ -56,3 +56,18 @@ input, button {
   border: 1px solid #5d8ffc;
   cursor: pointer;
 }
+
+h3
+{
+  width: 100%; /* Full width */
+  color:  #fff;
+}
+
+body
+{
+    background-image: url(./../images/jesse-collins-629527-unsplash.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    z-index: -10;
+}

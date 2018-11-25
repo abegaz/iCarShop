@@ -1,0 +1,61 @@
+MAKE (all mildly stolen from a DMV site and other car databases, is far from exhaustive)
+
+Audi
+BMW
+Chrysler
+Fiat
+Ford
+General Motors 
+Honda
+Hyundai
+Jaguar
+Kia
+Land Rover
+Mazda
+Mercedes Benz
+Mitsubishi
+Nissan
+Porsche
+Saab
+Subaru
+Suzuki
+Toyota
+Volkswagen
+Volvo
+
+
+BODY
+
+SIMPLE (just for a start but more complex could help with search/sort)
+
+Convertible
+Jeep
+Sedan
+SUV
+Truck
+Van
+
+
+ COLORS (from a Texas DMV list)
+
+Blue 
+Maroon
+Yellow
+Silver
+Purple
+Orange
+Green
+Gray
+Pink
+Tan
+Brown
+Black
+Red
+Gold
+Beige
+White
+
+
+
+
+
