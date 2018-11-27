@@ -12,3 +12,7 @@ Git Integration Setup Commands: (enter into Windows command prompt) (ignore the 
 > git clone https://github.com/abegaz/iCarShop.git
 > cd iCarShop
 > code .
+
+
+Base Link for hosted project: https://carprojectv1.firebaseapp.com
+Login Link for administrator page: https://carprojectv1.firebaseapp.com/CarDataEntry/login.html
