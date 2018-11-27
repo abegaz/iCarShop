@@ -1,0 +1,22 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+header
+{
+    background-image: url(./../images/jesse-collins-629527-unsplash.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    z-index: -10;
+}
+
+.jumbotron{
+    background: none;
+    color: white;
+    text-align: left;
+    z-index: -9;
+    background: rgba(20, 20, 20, .5);
+}
